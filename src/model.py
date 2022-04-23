@@ -2,7 +2,6 @@
 In this file
     1. We are going to build a model 
     2. Train the model
-    3. Perform the inferance
 """
 
 from src import preprocessing
@@ -106,10 +105,10 @@ early_stopping = keras.callbacks.EarlyStopping(
     monitor='val_loss', patience = early_stopping_patience, restore_best_weights=True
 )
 
-# Train the model
-history = model.fit(
-    preprocessing.train_dataset,
-    validation_data = preprocessing.validation_dataset,
-    epochs=epochs,
-    callbacks=[early_stopping]
-)
+# # Train the model
+# history = model.fit(
+#     preprocessing.train_dataset,
+#     validation_data = preprocessing.validation_dataset,
+#     epochs=epochs,
+#     callbacks=[early_stopping]
+# )

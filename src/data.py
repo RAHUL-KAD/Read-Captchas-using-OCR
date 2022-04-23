@@ -1,8 +1,12 @@
+"""
+In this file we will load the dataset and seprate images from its labels.
+"""
+
 import os
 from pathlib import Path
 
 # Path to data directory
-data = Path('/home/rahul/Desktop/ml_project/Deep learning/Read-Captchas-using-OCR/dataset')
+data = Path('/ocr/Read-Captchas-using-OCR/dataset')
 
 # Get the list of all the images
 images = sorted(list(map(str, list(data.glob("*.png")))))
